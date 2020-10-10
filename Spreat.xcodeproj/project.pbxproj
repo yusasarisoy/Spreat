@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44AD35192531B83500CB833E /* WorldDataCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AD35182531B83500CB833E /* WorldDataCard.swift */; };
+		44AD351B2531BB0A00CB833E /* WorldDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AD351A2531BB0A00CB833E /* WorldDataView.swift */; };
+		44AD351D2531C30800CB833E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AD351C2531C30800CB833E /* SearchView.swift */; };
+		44AD351F2531C85800CB833E /* CountryDetailsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AD351E2531C85800CB833E /* CountryDetailsRow.swift */; };
+		44AD35212531CCA600CB833E /* CountryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AD35202531CCA600CB833E /* CountryDetailsView.swift */; };
 		44BFB8302530C48F0002899F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFB82F2530C48F0002899F /* AppDelegate.swift */; };
 		44BFB8322530C48F0002899F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFB8312530C48F0002899F /* SceneDelegate.swift */; };
 		44BFB8342530C48F0002899F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFB8332530C48F0002899F /* ContentView.swift */; };
@@ -15,6 +20,15 @@
 		44BFB83C2530C4900002899F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BFB83A2530C4900002899F /* LaunchScreen.storyboard */; };
 		44BFB8472530C4900002899F /* SpreatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFB8462530C4900002899F /* SpreatTests.swift */; };
 		44BFB8522530C4900002899F /* SpreatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFB8512530C4900002899F /* SpreatUITests.swift */; };
+		44BFB8602530C93F0002899F /* COVIDFetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFB85F2530C93F0002899F /* COVIDFetchRequest.swift */; };
+		44BFB8622530CE100002899F /* COVIDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFB8612530CE100002899F /* COVIDModel.swift */; };
+		44BFB8672530E0D10002899F /* RecentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFB8662530E0D10002899F /* RecentsView.swift */; };
+		44BFB8692530E3090002899F /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFB8682530E3090002899F /* ListHeaderView.swift */; };
+		44BFB86B2530E5EC0002899F /* CountryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFB86A2530E5EC0002899F /* CountryRowView.swift */; };
+		44BFB86E2530E8010002899F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFB86D2530E8010002899F /* Extension.swift */; };
+		729CA190D836CB9DE0D03AE5 /* Pods_SpreatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940D7FBEF67FA24A7B0BC3C6 /* Pods_SpreatTests.framework */; };
+		979238DAF0BF1C9CD54ED680 /* Pods_Spreat_SpreatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03E95AF45CC6E616DB90FC0 /* Pods_Spreat_SpreatUITests.framework */; };
+		BECDC6A15DB1F8A682127D77 /* Pods_Spreat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED2891C93C501248B150AD3 /* Pods_Spreat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		134BEDD70DD69C1740E3C1C8 /* Pods-Spreat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spreat.release.xcconfig"; path = "Target Support Files/Pods-Spreat/Pods-Spreat.release.xcconfig"; sourceTree = "<group>"; };
+		2ED2891C93C501248B150AD3 /* Pods_Spreat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spreat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44AD35182531B83500CB833E /* WorldDataCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldDataCard.swift; sourceTree = "<group>"; };
+		44AD351A2531BB0A00CB833E /* WorldDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldDataView.swift; sourceTree = "<group>"; };
+		44AD351C2531C30800CB833E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		44AD351E2531C85800CB833E /* CountryDetailsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsRow.swift; sourceTree = "<group>"; };
+		44AD35202531CCA600CB833E /* CountryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsView.swift; sourceTree = "<group>"; };
 		44BFB82C2530C48F0002899F /* Spreat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spreat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BFB82F2530C48F0002899F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44BFB8312530C48F0002899F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +70,19 @@
 		44BFB84D2530C4900002899F /* SpreatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpreatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BFB8512530C4900002899F /* SpreatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpreatUITests.swift; sourceTree = "<group>"; };
 		44BFB8532530C4900002899F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44BFB85F2530C93F0002899F /* COVIDFetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVIDFetchRequest.swift; sourceTree = "<group>"; };
+		44BFB8612530CE100002899F /* COVIDModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVIDModel.swift; sourceTree = "<group>"; };
+		44BFB8662530E0D10002899F /* RecentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsView.swift; sourceTree = "<group>"; };
+		44BFB8682530E3090002899F /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
+		44BFB86A2530E5EC0002899F /* CountryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRowView.swift; sourceTree = "<group>"; };
+		44BFB86D2530E8010002899F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4B96FF4DB7753044B8CA2AFB /* Pods-SpreatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpreatTests.release.xcconfig"; path = "Target Support Files/Pods-SpreatTests/Pods-SpreatTests.release.xcconfig"; sourceTree = "<group>"; };
+		6D2E3DD1AC42FDA893C24347 /* Pods-Spreat-SpreatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spreat-SpreatUITests.debug.xcconfig"; path = "Target Support Files/Pods-Spreat-SpreatUITests/Pods-Spreat-SpreatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		896951DFBE7A52F9681180EC /* Pods-Spreat-SpreatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spreat-SpreatUITests.release.xcconfig"; path = "Target Support Files/Pods-Spreat-SpreatUITests/Pods-Spreat-SpreatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		940D7FBEF67FA24A7B0BC3C6 /* Pods_SpreatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpreatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E03E95AF45CC6E616DB90FC0 /* Pods_Spreat_SpreatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spreat_SpreatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47BF41638B6E1353B8EED41 /* Pods-Spreat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spreat.debug.xcconfig"; path = "Target Support Files/Pods-Spreat/Pods-Spreat.debug.xcconfig"; sourceTree = "<group>"; };
+		F59C2BA8390331C45FCEE1B2 /* Pods-SpreatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpreatTests.debug.xcconfig"; path = "Target Support Files/Pods-SpreatTests/Pods-SpreatTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECDC6A15DB1F8A682127D77 /* Pods_Spreat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				729CA190D836CB9DE0D03AE5 /* Pods_SpreatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +106,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979238DAF0BF1C9CD54ED680 /* Pods_Spreat_SpreatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CCEDF5186D0596BF5F5BCDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F47BF41638B6E1353B8EED41 /* Pods-Spreat.debug.xcconfig */,
+				134BEDD70DD69C1740E3C1C8 /* Pods-Spreat.release.xcconfig */,
+				6D2E3DD1AC42FDA893C24347 /* Pods-Spreat-SpreatUITests.debug.xcconfig */,
+				896951DFBE7A52F9681180EC /* Pods-Spreat-SpreatUITests.release.xcconfig */,
+				F59C2BA8390331C45FCEE1B2 /* Pods-SpreatTests.debug.xcconfig */,
+				4B96FF4DB7753044B8CA2AFB /* Pods-SpreatTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		43C5905E4A69558FA178C1A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2ED2891C93C501248B150AD3 /* Pods_Spreat.framework */,
+				E03E95AF45CC6E616DB90FC0 /* Pods_Spreat_SpreatUITests.framework */,
+				940D7FBEF67FA24A7B0BC3C6 /* Pods_SpreatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		44BFB8232530C48F0002899F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +143,8 @@
 				44BFB8452530C4900002899F /* SpreatTests */,
 				44BFB8502530C4900002899F /* SpreatUITests */,
 				44BFB82D2530C48F0002899F /* Products */,
+				0CCEDF5186D0596BF5F5BCDB /* Pods */,
+				43C5905E4A69558FA178C1A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +161,10 @@
 		44BFB82E2530C48F0002899F /* Spreat */ = {
 			isa = PBXGroup;
 			children = (
-				44BFB82F2530C48F0002899F /* AppDelegate.swift */,
-				44BFB8312530C48F0002899F /* SceneDelegate.swift */,
-				44BFB8332530C48F0002899F /* ContentView.swift */,
-				44BFB8352530C4900002899F /* Assets.xcassets */,
-				44BFB83A2530C4900002899F /* LaunchScreen.storyboard */,
+				44BFB8632530E0870002899F /* Resources */,
+				44BFB8642530E0960002899F /* Models */,
+				44BFB8652530E0A10002899F /* Views */,
+				44BFB86C2530E7EC0002899F /* Extensions */,
 				44BFB83D2530C4900002899F /* Info.plist */,
 				44BFB8372530C4900002899F /* Preview Content */,
 			);
@@ -136,6 +197,50 @@
 			path = SpreatUITests;
 			sourceTree = "<group>";
 		};
+		44BFB8632530E0870002899F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44BFB82F2530C48F0002899F /* AppDelegate.swift */,
+				44BFB8312530C48F0002899F /* SceneDelegate.swift */,
+				44BFB8352530C4900002899F /* Assets.xcassets */,
+				44BFB83A2530C4900002899F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		44BFB8642530E0960002899F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44BFB85F2530C93F0002899F /* COVIDFetchRequest.swift */,
+				44BFB8612530CE100002899F /* COVIDModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44BFB8652530E0A10002899F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44BFB8332530C48F0002899F /* ContentView.swift */,
+				44BFB8662530E0D10002899F /* RecentsView.swift */,
+				44BFB8682530E3090002899F /* ListHeaderView.swift */,
+				44BFB86A2530E5EC0002899F /* CountryRowView.swift */,
+				44AD35182531B83500CB833E /* WorldDataCard.swift */,
+				44AD351A2531BB0A00CB833E /* WorldDataView.swift */,
+				44AD351C2531C30800CB833E /* SearchView.swift */,
+				44AD351E2531C85800CB833E /* CountryDetailsRow.swift */,
+				44AD35202531CCA600CB833E /* CountryDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44BFB86C2530E7EC0002899F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				44BFB86D2530E8010002899F /* Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44BFB8562530C4900002899F /* Build configuration list for PBXNativeTarget "Spreat" */;
 			buildPhases = (
+				F3D33F7AEA77F511AF18DD1C /* [CP] Check Pods Manifest.lock */,
 				44BFB8282530C48F0002899F /* Sources */,
 				44BFB8292530C48F0002899F /* Frameworks */,
 				44BFB82A2530C48F0002899F /* Resources */,
+				5FE61BB778837A09964B71E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +267,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44BFB8592530C4900002899F /* Build configuration list for PBXNativeTarget "SpreatTests" */;
 			buildPhases = (
+				A0A61DB061CF08A002DC21A7 /* [CP] Check Pods Manifest.lock */,
 				44BFB83E2530C4900002899F /* Sources */,
 				44BFB83F2530C4900002899F /* Frameworks */,
 				44BFB8402530C4900002899F /* Resources */,
@@ -178,9 +286,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44BFB85C2530C4900002899F /* Build configuration list for PBXNativeTarget "SpreatUITests" */;
 			buildPhases = (
+				F8E916675AF13F38467441A7 /* [CP] Check Pods Manifest.lock */,
 				44BFB8492530C4900002899F /* Sources */,
 				44BFB84A2530C4900002899F /* Frameworks */,
 				44BFB84B2530C4900002899F /* Resources */,
+				9D67624EF9B17A56E0B06DA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,14 +372,128 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5FE61BB778837A09964B71E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spreat/Pods-Spreat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spreat/Pods-Spreat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spreat/Pods-Spreat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D67624EF9B17A56E0B06DA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spreat-SpreatUITests/Pods-Spreat-SpreatUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spreat-SpreatUITests/Pods-Spreat-SpreatUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spreat-SpreatUITests/Pods-Spreat-SpreatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0A61DB061CF08A002DC21A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpreatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3D33F7AEA77F511AF18DD1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spreat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8E916675AF13F38467441A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spreat-SpreatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		44BFB8282530C48F0002899F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44BFB86E2530E8010002899F /* Extension.swift in Sources */,
+				44BFB8692530E3090002899F /* ListHeaderView.swift in Sources */,
+				44BFB8622530CE100002899F /* COVIDModel.swift in Sources */,
+				44BFB8672530E0D10002899F /* RecentsView.swift in Sources */,
+				44AD351D2531C30800CB833E /* SearchView.swift in Sources */,
+				44AD351F2531C85800CB833E /* CountryDetailsRow.swift in Sources */,
+				44AD35192531B83500CB833E /* WorldDataCard.swift in Sources */,
 				44BFB8302530C48F0002899F /* AppDelegate.swift in Sources */,
+				44AD35212531CCA600CB833E /* CountryDetailsView.swift in Sources */,
 				44BFB8322530C48F0002899F /* SceneDelegate.swift in Sources */,
+				44BFB8602530C93F0002899F /* COVIDFetchRequest.swift in Sources */,
+				44BFB86B2530E5EC0002899F /* CountryRowView.swift in Sources */,
 				44BFB8342530C48F0002899F /* ContentView.swift in Sources */,
+				44AD351B2531BB0A00CB833E /* WorldDataView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +656,7 @@
 		};
 		44BFB8572530C4900002899F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F47BF41638B6E1353B8EED41 /* Pods-Spreat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +677,7 @@
 		};
 		44BFB8582530C4900002899F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 134BEDD70DD69C1740E3C1C8 /* Pods-Spreat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +698,7 @@
 		};
 		44BFB85A2530C4900002899F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F59C2BA8390331C45FCEE1B2 /* Pods-SpreatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +721,7 @@
 		};
 		44BFB85B2530C4900002899F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B96FF4DB7753044B8CA2AFB /* Pods-SpreatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +744,7 @@
 		};
 		44BFB85D2530C4900002899F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D2E3DD1AC42FDA893C24347 /* Pods-Spreat-SpreatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +765,7 @@
 		};
 		44BFB85E2530C4900002899F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 896951DFBE7A52F9681180EC /* Pods-Spreat-SpreatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
