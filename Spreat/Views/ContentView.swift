@@ -18,6 +18,14 @@ struct ContentView: View {
                 Tab(imageName: "chart.bar", text: "Recents")
             }
             .tag(0)
+            
+            // Second tab item will be "Map".
+            MapContainerView()
+                .edgesIgnoringSafeArea(.vertical)
+                .tabItem {
+                Tab(imageName: "map", text: "Map")
+            }
+            .tag(1)
         }
     }
 }
