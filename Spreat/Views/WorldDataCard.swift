@@ -18,14 +18,14 @@ struct WorldDataCard: View {
         GeometryReader { geometry in
             VStack {
                 Text(self.number)
-                    .font(.caption)
+                    .font(.footnote)
                     .padding(.vertical, 5)
                     .foregroundColor(self.color)
                 Text(self.name)
                     .font(.footnote)
                     .foregroundColor(self.color)
             }
-            .frame(width: geometry.size.width, height: 80, alignment: .center)
+            .frame(width: geometry.size.width, height: 65, alignment: .center)
             .background(Color("CardBackground"))
             .cornerRadius(12)
         }

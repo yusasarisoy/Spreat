@@ -14,7 +14,7 @@ struct SearchView: View {
     
     var body: some View {
         HStack {
-            TextField("Type a country...", text: $searchText)
+            TextField("Search", text: $searchText)
                 .padding()
         }
         .frame(height: 50)

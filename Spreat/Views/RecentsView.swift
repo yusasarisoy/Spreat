@@ -12,6 +12,9 @@ struct RecentsView: View {
     // Get data for the world and the all countries.
     @ObservedObject var covidFetchRequest = COVIDFetchRequest()
     
+    // Get detailed data for the all countries.
+    @ObservedObject var covidCountryFetchRequest = COVIDCountryFetchRequest()
+    
     // The text of the SearchBar.
     @State var searchText = ""
     
@@ -30,6 +33,12 @@ struct RecentsView: View {
                     SearchView(searchText: $searchText)
                 }
                 
+                // Get the last updated time.
+                Text("Last Update: \(covidCountryFetchRequest.countryStatisticsData?.lastUpdated ?? "Unknown")")
+                    .font(.subheadline)
+                    .foregroundColor(Color.gray)
+                    .padding(.top, 10)
+                
                 // Get the world data/
                 WorldDataView(worldData: covidFetchRequest.worldData)
                 
@@ -42,7 +51,7 @@ struct RecentsView: View {
                         self.searchText.isEmpty ? true : $0.country.lowercased().contains(self.searchText.lowercased())
                     }, id: \.country) { countryData in
                         // Go to the country details.
-                        NavigationLink(destination: CountryDetailsView(countryData: countryData)) {
+                        NavigationLink(destination: CountryDetailsView(country: countryData.country)) {
                             CountryRowView(countryData: countryData)
                         }
                     }

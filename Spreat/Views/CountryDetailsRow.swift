@@ -19,7 +19,7 @@ struct CountryDetailsRow: View {
             HStack {
                 Text(self.name)
                     .font(.body)
-                    .padding(.all, 5)
+                    .padding(.all, 15)
                 
                 Spacer()
                 
@@ -28,9 +28,6 @@ struct CountryDetailsRow: View {
                     .padding(.all, 5)
                     .foregroundColor(color)
             }
-            .padding()
-            
-            Divider()
         }
         .padding(.leading)
         .padding(.trailing)
