@@ -35,7 +35,6 @@ class COVIDFetchRequest: ObservableObject {
             
             if result != nil {
                 let json = JSON(result!)
-                print(json)
                 
                 let confirmed = json[0]["confirmed"].intValue
                 let deaths = json[0]["deaths"].intValue
@@ -60,10 +59,10 @@ class COVIDFetchRequest: ObservableObject {
                     let country = countryData["country"] as? String ?? ""
                     let latitude = countryData["latitude"] as? Double ?? 0.0
                     let longitude = countryData["longitude"] as? Double ?? 0.0
-                    let confirmed = countryData["confirmed"] as? Int64 ?? 0
-                    let deaths = countryData["deaths"] as? Int64 ?? 0
-                    let critical = countryData["critical"] as? Int64 ?? 0
-                    let recovered = countryData["recovered"] as? Int64 ?? 0
+                    let confirmed = countryData["confirmed"] as? Int ?? 0
+                    let deaths = countryData["deaths"] as? Int ?? 0
+                    let critical = countryData["critical"] as? Int ?? 0
+                    let recovered = countryData["recovered"] as? Int ?? 0
                     
                     let countryObject = CountryData(country: country, confirmed: confirmed, critical: critical, deaths: deaths, recovered: recovered, latitude: latitude, longitude: longitude)
                     

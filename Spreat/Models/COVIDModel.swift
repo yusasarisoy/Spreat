@@ -25,12 +25,33 @@ struct WorldData {
 
 struct CountryData {
     let country: String
-    let confirmed: Int64
-    let critical: Int64
-    let deaths: Int64
-    let recovered: Int64
+    let confirmed: Int
+    let critical: Int
+    let deaths: Int
+    let recovered: Int
     let latitude: Double
     let longitude: Double
+    
+    var fatalityRate: Double {
+        return (100.0 * Double(deaths)) / Double(confirmed)
+    }
+    
+    var recoveryRate: Double {
+        return (100.0 * Double(recovered)) / Double(confirmed)
+    }
+}
+
+struct CountryStatisticsData {
+    let country: String
+    let lastUpdated: String
+    let confirmed: Int
+    let newConfirmed: String
+    let active: Int
+    let critical: Int
+    let deaths: Int
+    let newDeaths: String
+    let recovered: Int
+    let tests: Int
     
     var fatalityRate: Double {
         return (100.0 * Double(deaths)) / Double(confirmed)
