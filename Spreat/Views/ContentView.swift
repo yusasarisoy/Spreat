@@ -33,6 +33,13 @@ struct ContentView: View {
                     Tab(imageName: "paperplane.fill", text: "news".localized())
             }
             .tag(2)
+            
+            // Fourth tab item will be "Options".
+            OptionsView()
+                .tabItem {
+                    Tab(imageName: "gear", text: "options".localized())
+            }
+            .tag(2)
         }
     }
 }

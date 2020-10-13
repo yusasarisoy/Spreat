@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4401BA7F253641A400008CC5 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4401BA7E253641A400008CC5 /* OptionsView.swift */; };
 		44732E742534D1320098792E /* COVIDNewsFetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44732E732534D1320098792E /* COVIDNewsFetchRequest.swift */; };
 		44732E762534D82A0098792E /* NewsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44732E752534D82A0098792E /* NewsItemView.swift */; };
 		44732E782534DA4D0098792E /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44732E772534DA4D0098792E /* NewsView.swift */; };
@@ -58,6 +59,7 @@
 /* Begin PBXFileReference section */
 		134BEDD70DD69C1740E3C1C8 /* Pods-Spreat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spreat.release.xcconfig"; path = "Target Support Files/Pods-Spreat/Pods-Spreat.release.xcconfig"; sourceTree = "<group>"; };
 		2ED2891C93C501248B150AD3 /* Pods_Spreat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spreat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4401BA7E253641A400008CC5 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
 		44732E732534D1320098792E /* COVIDNewsFetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVIDNewsFetchRequest.swift; sourceTree = "<group>"; };
 		44732E752534D82A0098792E /* NewsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemView.swift; sourceTree = "<group>"; };
 		44732E772534DA4D0098792E /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
@@ -166,6 +168,14 @@
 				940D7FBEF67FA24A7B0BC3C6 /* Pods_SpreatTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4401BA7D2536415400008CC5 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				4401BA7E253641A400008CC5 /* OptionsView.swift */,
+			);
+			path = Options;
 			sourceTree = "<group>";
 		};
 		44A59B0E25360F9D00F02F9A /* Map */ = {
@@ -300,6 +310,7 @@
 				44A59B1025360FDD00F02F9A /* Recents */,
 				44A59B0E25360F9D00F02F9A /* Map */,
 				44A59B0F25360FC700F02F9A /* News */,
+				4401BA7D2536415400008CC5 /* Options */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -564,6 +575,7 @@
 				44BFB86E2530E8010002899F /* Extension.swift in Sources */,
 				44BFB8692530E3090002899F /* ListHeaderView.swift in Sources */,
 				44AD35272531DD2100CB833E /* COVIDCountryFetchRequest.swift in Sources */,
+				4401BA7F253641A400008CC5 /* OptionsView.swift in Sources */,
 				44BFB8622530CE100002899F /* COVIDModel.swift in Sources */,
 				44BFB8672530E0D10002899F /* RecentsView.swift in Sources */,
 				44AD351D2531C30800CB833E /* SearchView.swift in Sources */,
