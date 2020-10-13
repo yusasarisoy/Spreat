@@ -1,6 +1,6 @@
 <div align="center">
   <img width="100" height="100" alt="Spreat" src="https://i.ibb.co/GxkJqLJ/virus.png">
-  </br></br>
+  </br>
   <h1><b>Spreat</b></h1>
 </div>
 
