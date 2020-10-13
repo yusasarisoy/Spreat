@@ -19,7 +19,7 @@ struct CountryDetailsView: View {
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            BarChartView(data: ChartData(values: [("active".localized(), countryFetchRequest.countryStatisticsData!.active), ("recovered".localized(), countryFetchRequest.countryStatisticsData!.recovered), ("critical".localized(),  countryFetchRequest.countryStatisticsData!.critical), ("deaths".localized(),  countryFetchRequest.countryStatisticsData!.deaths)]), title: country, legend: "summary".localized())
+            BarChartView(data: ChartData(values: [("active".localized(), countryFetchRequest.countryStatisticsData!.active), ("recovered".localized(), countryFetchRequest.countryStatisticsData!.recovered), ("critical".localized(), countryFetchRequest.countryStatisticsData!.critical), ("deaths".localized(), countryFetchRequest.countryStatisticsData!.deaths)]), title: country, legend: "summary".localized())
                 .padding(10)
             VStack {
                 CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.confirmed.formatNumber() ?? "unknown".localized(), name: "confirmed".localized(), color: .gray)

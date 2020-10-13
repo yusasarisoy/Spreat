@@ -15,7 +15,7 @@ struct WorldDataView: View {
     var body: some View {
         VStack {
             HStack {
-                WorldDataCard(number: worldData.confirmed.formatNumber(), name: "confirmed".localized().localized())
+                WorldDataCard(number: worldData.confirmed.formatNumber(), name: "confirmed".localized())
                 WorldDataCard(number: worldData.critical.formatNumber(), name: "critical".localized(), color: .yellow)
             }
             HStack {
