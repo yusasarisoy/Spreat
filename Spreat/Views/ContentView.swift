@@ -15,15 +15,15 @@ struct ContentView: View {
             
             // First tab item will be "Recents".
             RecentsView().tabItem {
-                Tab(imageName: "chart.bar", text: "Recent")
+                Tab(imageName: "table.fill", text: "Recent")
             }
             .tag(0)
             
             // Second tab item will be "Map".
             MapContainerView()
-                .edgesIgnoringSafeArea(.vertical)
+                .edgesIgnoringSafeArea(.all)
                 .tabItem {
-                    Tab(imageName: "mappin", text: "Map")
+                    Tab(imageName: "map.fill", text: "Map")
             }
             .tag(1)
         }

@@ -62,5 +62,13 @@ struct CountryStatisticsData {
     }
 }
 
+struct COVIDNews: Hashable {
+    let title: String
+    let summary: String
+    let link: String
+    let author: String
+}
+
 let defaultWorldData = WorldData(confirmed: 0, critical: 0, deaths: 0, recovered: 0)
 let defaultCountryData = CountryData(country: "Unknown", confirmed: 0, critical: 0, deaths: 0, recovered: 0, latitude: 0.0, longitude: 0.0)
+let defaultCOVIDNews = COVIDNews(title: "Title", summary: "Summary", link: "Link", author: "Author")

@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import SwiftUICharts
 
 struct RecentsView: View {
     // Get data for the world and the all countries.
@@ -14,6 +15,13 @@ struct RecentsView: View {
     
     // Get detailed data for the all countries.
     @ObservedObject var covidCountryFetchRequest = COVIDCountryFetchRequest()
+    
+    // Get news for the country.
+    @ObservedObject var covidNewsFetchRequest = COVIDNewsFetchRequest()
+    
+    @State var isGraphicActive: Bool = false
+    
+    let chartStyle = ChartStyle(backgroundColor: Color("CardBackground"), accentColor: Color.orange, secondGradientColor: Colors.OrangeEnd, textColor: Color.white, legendTextColor: Color.white, dropShadowColor: Color.gray)
     
     // The text of the SearchBar.
     @State var searchText = ""
@@ -36,17 +44,23 @@ struct RecentsView: View {
                 // Get the last updated time.
                 Text("Last Update: \(covidCountryFetchRequest.countryStatisticsData?.lastUpdated ?? "Unknown")")
                     .font(.subheadline)
-                    .foregroundColor(Color.gray)
+                    .foregroundColor(isGraphicActive ? Color.gray : Color.white)
                     .padding(.top, 10)
                 
-                // Get the world data/
-                WorldDataView(worldData: covidFetchRequest.worldData)
+                if isGraphicActive {
+                    BarChartView(data: ChartData(values: [("Confirmed", covidFetchRequest.worldData.confirmed), ("Critical", covidFetchRequest.worldData.critical), ("Deaths", covidFetchRequest.worldData.deaths), ("Recovered", covidFetchRequest.worldData.recovered)]), title: "Global", legend: "Recents")
+                        .padding(10)
+                    
+                } else {
+                    // Get the world data.
+                    WorldDataView(worldData: covidFetchRequest.worldData)
+                }
                 
                 // Set the titles to present the statistics of COVID-19.
                 ListHeaderView()
                 
                 // Get the data for all countries and present them on the list.
-                List{
+                List {
                     ForEach(covidFetchRequest.countriesData.filter {
                         self.searchText.isEmpty ? true : $0.country.lowercased().contains(self.searchText.lowercased())
                     }, id: \.country) { countryData in
@@ -63,20 +77,26 @@ struct RecentsView: View {
                 .navigationBarTitle("Spreat - Recents", displayMode: .inline)
                 
                 // The search icon of the NavigationView at the top right.
-                .navigationBarItems(trailing:
-                    Button(action: {
-                        // Toggle the SearchBar.
-                        self.isSearchVisible.toggle()
-                        
-                        // If the SearchBar is not visible, clear its text.
-                        if !self.isSearchVisible {
-                            self.searchText = ""
-                        }
-                    }, label: {
-                        Image(systemName: "magnifyingglass")
-                            .resizable()
-                            .frame(width: 20, height: 20)
-                    })
+                .navigationBarItems(leading: Button(action: {
+                    // Toggle the SearchBar.
+                    self.isGraphicActive.toggle()
+                }, label: {
+                    Image(systemName: isGraphicActive ? "info.circle.fill" : "chart.bar.fill")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                }), trailing: Button(action: {
+                    // Toggle the SearchBar.
+                    self.isSearchVisible.toggle()
+                    
+                    // If the SearchBar is not visible, clear its text.
+                    if !self.isSearchVisible {
+                        self.searchText = ""
+                    }
+                }, label: {
+                    Image(systemName: "magnifyingglass")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                })
             )
         }
     }

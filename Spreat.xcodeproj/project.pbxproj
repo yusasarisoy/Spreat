@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44732E742534D1320098792E /* COVIDNewsFetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44732E732534D1320098792E /* COVIDNewsFetchRequest.swift */; };
+		44732E762534D82A0098792E /* NewsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44732E752534D82A0098792E /* NewsItemView.swift */; };
+		44732E782534DA4D0098792E /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44732E772534DA4D0098792E /* NewsView.swift */; };
 		44AD35192531B83500CB833E /* WorldDataCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AD35182531B83500CB833E /* WorldDataCard.swift */; };
 		44AD351B2531BB0A00CB833E /* WorldDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AD351A2531BB0A00CB833E /* WorldDataView.swift */; };
 		44AD351D2531C30800CB833E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AD351C2531C30800CB833E /* SearchView.swift */; };
@@ -54,6 +57,9 @@
 /* Begin PBXFileReference section */
 		134BEDD70DD69C1740E3C1C8 /* Pods-Spreat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spreat.release.xcconfig"; path = "Target Support Files/Pods-Spreat/Pods-Spreat.release.xcconfig"; sourceTree = "<group>"; };
 		2ED2891C93C501248B150AD3 /* Pods_Spreat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spreat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44732E732534D1320098792E /* COVIDNewsFetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVIDNewsFetchRequest.swift; sourceTree = "<group>"; };
+		44732E752534D82A0098792E /* NewsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemView.swift; sourceTree = "<group>"; };
+		44732E772534DA4D0098792E /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		44AD35182531B83500CB833E /* WorldDataCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldDataCard.swift; sourceTree = "<group>"; };
 		44AD351A2531BB0A00CB833E /* WorldDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldDataView.swift; sourceTree = "<group>"; };
 		44AD351C2531C30800CB833E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -142,6 +148,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		44A59B0E25360F9D00F02F9A /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				44AD35222531D50E00CB833E /* MapView.swift */,
+				44AD35242531D8C600CB833E /* MapContainerView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		44A59B0F25360FC700F02F9A /* News */ = {
+			isa = PBXGroup;
+			children = (
+				44732E752534D82A0098792E /* NewsItemView.swift */,
+				44732E772534DA4D0098792E /* NewsView.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		44A59B1025360FDD00F02F9A /* Recents */ = {
+			isa = PBXGroup;
+			children = (
+				44BFB8662530E0D10002899F /* RecentsView.swift */,
+				44BFB8682530E3090002899F /* ListHeaderView.swift */,
+				44BFB86A2530E5EC0002899F /* CountryRowView.swift */,
+				44AD35182531B83500CB833E /* WorldDataCard.swift */,
+				44AD351A2531BB0A00CB833E /* WorldDataView.swift */,
+				44AD351C2531C30800CB833E /* SearchView.swift */,
+				44AD351E2531C85800CB833E /* CountryDetailsRow.swift */,
+				44AD35202531CCA600CB833E /* CountryDetailsView.swift */,
+			);
+			path = Recents;
+			sourceTree = "<group>";
+		};
 		44BFB8232530C48F0002899F = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +259,7 @@
 				44BFB8612530CE100002899F /* COVIDModel.swift */,
 				44BFB85F2530C93F0002899F /* COVIDFetchRequest.swift */,
 				44AD35262531DD2100CB833E /* COVIDCountryFetchRequest.swift */,
+				44732E732534D1320098792E /* COVIDNewsFetchRequest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,16 +268,9 @@
 			isa = PBXGroup;
 			children = (
 				44BFB8332530C48F0002899F /* ContentView.swift */,
-				44BFB8662530E0D10002899F /* RecentsView.swift */,
-				44BFB8682530E3090002899F /* ListHeaderView.swift */,
-				44BFB86A2530E5EC0002899F /* CountryRowView.swift */,
-				44AD35182531B83500CB833E /* WorldDataCard.swift */,
-				44AD351A2531BB0A00CB833E /* WorldDataView.swift */,
-				44AD351C2531C30800CB833E /* SearchView.swift */,
-				44AD351E2531C85800CB833E /* CountryDetailsRow.swift */,
-				44AD35202531CCA600CB833E /* CountryDetailsView.swift */,
-				44AD35222531D50E00CB833E /* MapView.swift */,
-				44AD35242531D8C600CB833E /* MapContainerView.swift */,
+				44A59B1025360FDD00F02F9A /* Recents */,
+				44A59B0E25360F9D00F02F9A /* Map */,
+				44A59B0F25360FC700F02F9A /* News */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -497,9 +530,12 @@
 				44AD351D2531C30800CB833E /* SearchView.swift in Sources */,
 				44AD351F2531C85800CB833E /* CountryDetailsRow.swift in Sources */,
 				44AD35192531B83500CB833E /* WorldDataCard.swift in Sources */,
+				44732E762534D82A0098792E /* NewsItemView.swift in Sources */,
 				44AD35232531D50E00CB833E /* MapView.swift in Sources */,
+				44732E742534D1320098792E /* COVIDNewsFetchRequest.swift in Sources */,
 				44BFB8302530C48F0002899F /* AppDelegate.swift in Sources */,
 				44AD35212531CCA600CB833E /* CountryDetailsView.swift in Sources */,
+				44732E782534DA4D0098792E /* NewsView.swift in Sources */,
 				44BFB8322530C48F0002899F /* SceneDelegate.swift in Sources */,
 				44BFB8602530C93F0002899F /* COVIDFetchRequest.swift in Sources */,
 				44BFB86B2530E5EC0002899F /* CountryRowView.swift in Sources */,
