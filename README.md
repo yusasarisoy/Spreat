@@ -6,7 +6,7 @@
 
 </br>
 
-<h3>🦠 Spreat is an iOS app that allows you to view the latest COVID-19 statistics for both the world and all countries using the chart or map. You can access the statistics details of a country you want with one click. It was developed using **SwiftUI**.</h3>
+🦠 Spreat is an iOS app that allows you to view the latest COVID-19 statistics for both the world and all countries using the chart or map. You can access the statistics details of a country you want with one click. It was developed using **SwiftUI**.
 
 </br>
 </br>
