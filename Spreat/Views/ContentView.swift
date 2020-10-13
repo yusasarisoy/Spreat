@@ -26,6 +26,13 @@ struct ContentView: View {
                     Tab(imageName: "map.fill", text: "Map")
             }
             .tag(1)
+            
+            // Third tab item will be "News".
+            NewsView()
+                .tabItem {
+                    Tab(imageName: "paperplane.fill", text: "News")
+            }
+            .tag(2)
         }
     }
 }
