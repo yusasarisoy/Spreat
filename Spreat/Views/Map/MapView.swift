@@ -18,7 +18,7 @@ struct MapView: UIViewRepresentable {
         var allAnnotations: [COVIDCaseAnnotation] = []
         
         for data in countryData {
-            let title = data.country + "\nConfirmed: \(data.confirmed)\nDeaths: \(data.deaths)"
+            let title = data.country + "\n\("confirmed".localized()): \(data.confirmed)\n\("deaths".localized()): \(data.deaths)"
             let coordinates = CLLocationCoordinate2D(latitude: data.latitude, longitude: data.longitude)
             allAnnotations.append(COVIDCaseAnnotation(title: title, coordinate: coordinates))
         }

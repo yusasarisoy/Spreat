@@ -19,19 +19,19 @@ struct CountryDetailsView: View {
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            BarChartView(data: ChartData(values: [("Active", countryFetchRequest.countryStatisticsData!.active), ("Recovered", countryFetchRequest.countryStatisticsData!.recovered), ("Critical",  countryFetchRequest.countryStatisticsData!.critical), ("Deaths",  countryFetchRequest.countryStatisticsData!.deaths)]), title: country, legend: "Summary")
+            BarChartView(data: ChartData(values: [("active".localized(), countryFetchRequest.countryStatisticsData!.active), ("recovered".localized(), countryFetchRequest.countryStatisticsData!.recovered), ("critical".localized(),  countryFetchRequest.countryStatisticsData!.critical), ("deaths".localized(),  countryFetchRequest.countryStatisticsData!.deaths)]), title: country, legend: "summary".localized())
                 .padding(10)
             VStack {
-                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.confirmed.formatNumber() ?? "Unknown", name: "Confirmed", color: .gray)
-                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.active.formatNumber() ?? "Unknown", name: "Active", color: .orange)
-                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.newConfirmed ?? "Unknown", name: "New Cases", color: .orange)
-                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.recovered.formatNumber() ?? "Unknown", name: "Recovered", color: .green)
-                CountryDetailsRow(number: String(format: "%.2f", countryFetchRequest.countryStatisticsData?.recoveryRate ?? 0.0) + "%", name: "Recovery Rate", color: .green)
-                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.critical.formatNumber() ?? "Unknown", name: "Critical", color: .yellow)
-                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.deaths.formatNumber() ?? "Unknown", name: "Deaths", color: .red)
-                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.newDeaths ?? "Unknown", name: "New Deaths", color: .red)
-                CountryDetailsRow(number: String(format: "%.2f", countryFetchRequest.countryStatisticsData?.fatalityRate ?? 0.0) + "%", name: "Fatality Rate", color: .red)
-                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.tests.formatNumber() ?? "Unknown", name: "Total Tests", color: .green)
+                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.confirmed.formatNumber() ?? "unknown".localized(), name: "confirmed".localized(), color: .gray)
+                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.active.formatNumber() ?? "unknown".localized(), name: "active".localized(), color: .orange)
+                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.newConfirmed ?? "unknown".localized(), name: "new_cases".localized(), color: .orange)
+                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.recovered.formatNumber() ?? "unknown".localized(), name: "recovered".localized(), color: .green)
+                CountryDetailsRow(number: String(format: "%.2f", countryFetchRequest.countryStatisticsData?.recoveryRate ?? 0.0) + "%", name: "recovery_rate".localized(), color: .green)
+                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.critical.formatNumber() ?? "unknown".localized(), name: "critical".localized(), color: .yellow)
+                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.deaths.formatNumber() ?? "unknown".localized(), name: "deaths".localized(), color: .red)
+                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.newDeaths ?? "unknown".localized(), name: "new_deaths".localized(), color: .red)
+                CountryDetailsRow(number: String(format: "%.2f", countryFetchRequest.countryStatisticsData?.fatalityRate ?? 0.0) + "%", name: "fatality_rate".localized(), color: .red)
+                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.tests.formatNumber() ?? "unknown".localized(), name: "total_tests".localized(), color: .green)
             }
             .background(Color("CardBackground"))
             .cornerRadius(12)

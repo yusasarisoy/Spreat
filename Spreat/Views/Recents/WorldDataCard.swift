@@ -11,7 +11,7 @@ import SwiftUI
 struct WorldDataCard: View {
     
     var number: String = "0"
-    var name: String = "Unknown"
+    var name: String = "unknown".localized()
     var color: Color = .primary
     
     var body: some View {

@@ -8,6 +8,7 @@
 
 import SwiftUI
 import SwiftUICharts
+import Localize_Swift
 
 struct RecentsView: View {
     // Get data for the world and the all countries.
@@ -42,13 +43,13 @@ struct RecentsView: View {
                 }
                 
                 // Get the last updated time.
-                Text("Last Update: \(covidCountryFetchRequest.countryStatisticsData?.lastUpdated ?? "Unknown")")
+                Text("\("last_updated".localized()): \(covidCountryFetchRequest.countryStatisticsData?.lastUpdated ?? "unknown".localized())")
                     .font(.subheadline)
                     .foregroundColor(isGraphicActive ? Color.gray : Color.white)
                     .padding(.top, 10)
                 
                 if isGraphicActive {
-                    BarChartView(data: ChartData(values: [("Confirmed", covidFetchRequest.worldData.confirmed), ("Critical", covidFetchRequest.worldData.critical), ("Deaths", covidFetchRequest.worldData.deaths), ("Recovered", covidFetchRequest.worldData.recovered)]), title: "Global", legend: "Recents")
+                    BarChartView(data: ChartData(values: [("\("confirmed".localized())", covidFetchRequest.worldData.confirmed), ("\("critical".localized())", covidFetchRequest.worldData.critical), ("\("deaths".localized())", covidFetchRequest.worldData.deaths), ("\("recovered".localized())", covidFetchRequest.worldData.recovered)]), title: "\("global".localized())", legend: "\("recent".localized())")
                         .padding(10)
                     
                 } else {
@@ -74,7 +75,7 @@ struct RecentsView: View {
             }
                 
                 // The title of the NavigationView.
-                .navigationBarTitle("Spreat - Recents", displayMode: .inline)
+                .navigationBarTitle("Spreat - \(("recent").localized())", displayMode: .inline)
                 
                 // The search icon of the NavigationView at the top right.
                 .navigationBarItems(leading: Button(action: {

@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ListHeaderView: View {
-    let headers = ["Country", "Confirmed", "Deaths", "Recovered"]
+    let headers = ["country".localized(), "confirmed".localized(), "deaths".localized(), "recovered".localized()]
     
     var body: some View {
         HStack {

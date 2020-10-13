@@ -25,7 +25,7 @@ struct NewsView: View {
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             }
                 // The title of the NavigationView.
-                .navigationBarTitle("Spreat - News", displayMode: .inline)
+                .navigationBarTitle("Spreat - \("news".localized())", displayMode: .inline)
         }
     }
 }

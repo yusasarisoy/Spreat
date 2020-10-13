@@ -15,7 +15,7 @@ struct ContentView: View {
             
             // First tab item will be "Recents".
             RecentsView().tabItem {
-                Tab(imageName: "table.fill", text: "Recent")
+                Tab(imageName: "table.fill", text: "recent".localized())
             }
             .tag(0)
             
@@ -23,14 +23,14 @@ struct ContentView: View {
             MapContainerView()
                 .edgesIgnoringSafeArea(.all)
                 .tabItem {
-                    Tab(imageName: "map.fill", text: "Map")
+                    Tab(imageName: "map.fill", text: "map".localized())
             }
             .tag(1)
             
             // Third tab item will be "News".
             NewsView()
                 .tabItem {
-                    Tab(imageName: "paperplane.fill", text: "News")
+                    Tab(imageName: "paperplane.fill", text: "news".localized())
             }
             .tag(2)
         }

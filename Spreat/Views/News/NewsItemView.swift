@@ -37,7 +37,7 @@ struct NewsItemView: View {
                     .padding(.all, 5)
             }
             
-            Button("Read More") {
+            Button("read_more".localized()) {
                 UIApplication.shared.open(URL(string: self.covidNews.link)!)
             }
             .padding(.all, 10)

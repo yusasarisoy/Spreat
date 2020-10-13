@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  Spreat
+
+  Created by Yuşa Sarısoy on 13.10.2020.
+  Copyright © 2020 Yuşa Sarısoy. All rights reserved.
+*/
+
+"recent" = "最近";
+"map" = "地図";
+"news" = "ニュース";
+"last_updated" = "最終更新";
+"confirmed" = "確認済み";
+"critical" = "クリティカル";
+"deaths" = "死亡者（数";
+"fatality_rate" = "致死率";
+"recovered" = "回復";
+"recovery_rate" = "回収率";
+"country" = "国";
+"summary" = "概要";
+"active" = "アクティブ";
+"new_cases" = "新しいケース";
+"new_deaths" = "新しい死";
+"total_tests" = "トータルテスト";
+"read_more" = "続きを読む";
+"global" = "グローバル";
+"search" = "探す";
+"unknown" = "わからない";
+"title" = "題名";
+"link" = "リンク";
+"author" = "著者";

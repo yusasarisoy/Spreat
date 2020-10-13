@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  Spreat
+
+  Created by Yuşa Sarısoy on 13.10.2020.
+  Copyright © 2020 Yuşa Sarısoy. All rights reserved.
+*/
+
+"recent" = "Güncel";
+"map" = "Harita";
+"news" = "Haberler";
+"last_updated" = "Son Güncelleme";
+"confirmed" = "Vaka";
+"critical" = "Kritik";
+"deaths" = "Ölüm";
+"fatality_rate" = "Ölüm Oranı";
+"recovered" = "İyileşen";
+"recovery_rate" = "İyileşme Oranı";
+"country" = "Ülke";
+"summary" = "Özet";
+"active" = "Aktif Vaka";
+"new_cases" = "Yeni Vaka";
+"new_deaths" = "Yeni Vefat";
+"total_tests" = "Toplam Test";
+"read_more" = "Daha fazla oku";
+"global" = "Dünya";
+"search" = "Ara";
+"unknown" = "Bilinmiyor";
+"title" = "Başlık";
+"link" = "Link";
+"author" = "Yazar";

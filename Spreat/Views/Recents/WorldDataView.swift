@@ -15,16 +15,16 @@ struct WorldDataView: View {
     var body: some View {
         VStack {
             HStack {
-                WorldDataCard(number: worldData.confirmed.formatNumber(), name: "Confirmed")
-                WorldDataCard(number: worldData.critical.formatNumber(), name: "Critical", color: .yellow)
+                WorldDataCard(number: worldData.confirmed.formatNumber(), name: "confirmed".localized().localized())
+                WorldDataCard(number: worldData.critical.formatNumber(), name: "critical".localized(), color: .yellow)
             }
             HStack {
-                WorldDataCard(number: worldData.deaths.formatNumber(), name: "Deaths", color: .red)
-                WorldDataCard(number: String(format: "%.2f", worldData.fatalityRate) + "%", name: "Fatality Rate", color: .red)
+                WorldDataCard(number: worldData.deaths.formatNumber(), name: "deaths".localized(), color: .red)
+                WorldDataCard(number: String(format: "%.2f", worldData.fatalityRate) + "%", name: "fatality_rate".localized(), color: .red)
             }
             HStack {
-                WorldDataCard(number: worldData.recovered.formatNumber(), name: "Recovered", color: .green)
-                WorldDataCard(number: String(format: "%.2f", worldData.recoveryRate) + "%", name: "Recovery Rate", color: .green)
+                WorldDataCard(number: worldData.recovered.formatNumber(), name: "recovered".localized(), color: .green)
+                WorldDataCard(number: String(format: "%.2f", worldData.recoveryRate) + "%", name: "recovery_rate".localized(), color: .green)
             }
         }
         .frame(height: 200)
