@@ -26,19 +26,15 @@
 
 # How to Run
 
-Open your terminal and enter the following lines:
+### Open your terminal and enter the following lines:
 
 </br>
 
-```objectivec
-pod init #This will create the Podfile.
-```
+``pod init #This will create the Podfile.``
 
 </br>
 
-```objectivec
-pod install #This will install the required libraries in the project.
-```
+``pod install #This will install the required libraries in the project.``
 
 </br>
 
