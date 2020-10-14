@@ -26,7 +26,7 @@
 
 # How to Run
 
-### Open your terminal and enter the following lines:
+Open your terminal and enter the following lines:
 
 </br>
 
