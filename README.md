@@ -44,4 +44,4 @@ pod install #This will install the required libraries in the project.
 
 # <b>Developer</b>
 
-### If you want to contact me, send an email to yusasarisoy@icloud.com.
+If you want to contact me, send an email to yusasarisoy@icloud.com.
