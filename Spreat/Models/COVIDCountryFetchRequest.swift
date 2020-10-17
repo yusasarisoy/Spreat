@@ -37,7 +37,7 @@ class COVIDCountryFetchRequest: ObservableObject {
                 let dateFormatter = DateFormatter()
                 dateFormatter.dateStyle = .short
                 dateFormatter.timeStyle = .short
-                dateFormatter.string(from: date!)
+                dateFormatter.string(from: date ?? Date())
                 
                 let response = json["response"][0]
                 
@@ -57,9 +57,9 @@ class COVIDCountryFetchRequest: ObservableObject {
                 
                 let tests = response["tests"]["total"].intValue
                 
-                self.countryStatisticsData = CountryStatisticsData(country: country, lastUpdated: dateFormatter.string(from: date!), confirmed: confirmed, newConfirmed: newConfirmed, active: active, critical: critical, deaths: deaths, newDeaths: newDeaths, recovered: recovered, tests: tests)
+                self.countryStatisticsData = CountryStatisticsData(country: country, lastUpdated: dateFormatter.string(from: date ?? Date()), confirmed: confirmed, newConfirmed: newConfirmed, active: active, critical: critical, deaths: deaths, newDeaths: newDeaths, recovered: recovered, tests: tests)
             } else {
-                
+               
             }
         }
     }
