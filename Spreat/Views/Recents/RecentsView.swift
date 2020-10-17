@@ -9,8 +9,17 @@
 import SwiftUI
 import SwiftUICharts
 import Localize_Swift
+import Network
 
 struct RecentsView: View {
+    
+    // Start monitorize the internet connection.
+    private let monitor = NWPathMonitor()
+    private let queue = DispatchQueue(label: "Monitor")
+    
+    // If there is not satisfied internet connection, show an alert.
+    @State private var internetConnectionLost: Bool = false
+    
     // Get data for the world and the all countries.
     @ObservedObject var covidFetchRequest = COVIDFetchRequest()
     
@@ -73,6 +82,17 @@ struct RecentsView: View {
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             }
+            .onAppear() {
+                // Start monitorize the internet connection.
+                self.monitor.start(queue: self.queue)
+                
+                self.monitor.pathUpdateHandler = { path in
+                    if path.status != .satisfied {
+                        // If there is not satisfied internet connection, show an alert.
+                        self.internetConnectionLost = true
+                    }
+                }
+            }
                 
                 // The title of the NavigationView.
                 .navigationBarTitle("Spreat - \(("recent").localized())", displayMode: .inline)
@@ -99,6 +119,17 @@ struct RecentsView: View {
                         .frame(width: 20, height: 20)
                 })
             )
+        }
+            // If there is not satisfied internet connection, show an alert.
+            .alert(isPresented: $internetConnectionLost) {
+                Alert(
+                    title: Text("offline".localized()),
+                    message: Text("no_internet".localized()),
+                    dismissButton: .default(Text("ok".localized()), action: {
+                        // Leave the application.
+                        exit(0);
+                    })
+                )
         }
     }
 }

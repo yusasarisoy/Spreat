@@ -30,3 +30,6 @@
 "link" = "Link";
 "author" = "Author";
 "options" = "Options";
+"offline" = "Offline";
+"no_internet" = "It seems like there is no internet connection. Can you check it?";
+"ok" = "OK";

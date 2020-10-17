@@ -30,3 +30,6 @@
 "link" = "Link";
 "author" = "Yazar";
 "options" = "Ayarlar";
+"offline" = "Çevrimdışı";
+"no_internet" = "İnternet bağlantısı yok gibi görünüyor. Kontrol edebilir misin?";
+"ok" = "Tamam";
