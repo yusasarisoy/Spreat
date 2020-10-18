@@ -54,7 +54,7 @@ struct RecentsView: View {
                 // Get the last updated time.
                 Text("\("last_updated".localized()): \(covidCountryFetchRequest.countryStatisticsData?.lastUpdated ?? "unknown".localized())")
                     .font(.subheadline)
-                    .foregroundColor(isGraphicActive ? Color.gray : Color.white)
+                    .foregroundColor(Color.gray)
                     .padding(.top, 10)
                 
                 if isGraphicActive {
@@ -83,6 +83,9 @@ struct RecentsView: View {
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             }
             .onAppear() {
+                // Disable highlighting the cell when it clicked.
+                UITableViewCell.appearance().selectionStyle = .none
+                
                 // Start monitorize the internet connection.
                 self.monitor.start(queue: self.queue)
                 

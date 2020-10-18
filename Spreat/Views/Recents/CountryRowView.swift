@@ -19,7 +19,6 @@ struct CountryRowView: View {
                 .lineLimit(2)
                 .padding(.vertical, 5)
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .foregroundColor(.white)
             
             Text(countryData.confirmed.formatNumber())
                 .fontWeight(.none)
