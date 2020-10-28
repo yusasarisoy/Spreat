@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import Localize_Swift
 
 class COVIDNewsFetchRequest: ObservableObject {
     
@@ -26,7 +27,7 @@ class COVIDNewsFetchRequest: ObservableObject {
     
     // Get the total numbers about COVID-19.
     func getNewsForTheCountry() {
-        AF.request("https://rapidapi.p.rapidapi.com/v1/covid?q=covid&lang=en", headers: headers).responseJSON { response in
+        AF.request("https://covid-19-news.p.rapidapi.com/v1/covid?lang=\(Localize.currentLanguage())&media=True&q=covid))", headers: headers).responseJSON { response in
             let result = response.data
             
             var allNews: [COVIDNews] = []

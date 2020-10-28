@@ -35,9 +35,6 @@ struct RecentsView: View {
     // Get detailed data for the all countries.
     @ObservedObject var covidCountryFetchRequest = COVIDCountryFetchRequest()
     
-    // Get news for the country.
-    @ObservedObject var covidNewsFetchRequest = COVIDNewsFetchRequest()
-    
     @State var isGraphicActive: Bool = false
     
     let chartStyle = ChartStyle(backgroundColor: Color("CardBackground"), accentColor: Color.orange, secondGradientColor: Colors.OrangeEnd, textColor: Color.white, legendTextColor: Color.white, dropShadowColor: Color.gray)
@@ -164,6 +161,17 @@ struct RecentsView: View {
                     }
                 }, label: {
                     Image(systemName: "magnifyingglass")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                })
+                
+                Divider()
+                
+                // Go to "News".
+                Button(action: {
+                    self.goToNews.toggle()
+                }, label: {
+                    Image(systemName: "paperplane.fill")
                         .resizable()
                         .frame(width: 20, height: 20)
                 })
