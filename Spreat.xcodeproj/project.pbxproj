@@ -35,7 +35,7 @@
 		44BFB8672530E0D10002899F /* RecentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFB8662530E0D10002899F /* RecentsView.swift */; };
 		44BFB8692530E3090002899F /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFB8682530E3090002899F /* ListHeaderView.swift */; };
 		44BFB86B2530E5EC0002899F /* CountryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFB86A2530E5EC0002899F /* CountryRowView.swift */; };
-		44BFB86E2530E8010002899F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFB86D2530E8010002899F /* Extension.swift */; };
+		44BFB86E2530E8010002899F /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BFB86D2530E8010002899F /* Int+Extensions.swift */; };
 		729CA190D836CB9DE0D03AE5 /* Pods_SpreatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940D7FBEF67FA24A7B0BC3C6 /* Pods_SpreatTests.framework */; };
 		979238DAF0BF1C9CD54ED680 /* Pods_Spreat_SpreatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03E95AF45CC6E616DB90FC0 /* Pods_Spreat_SpreatUITests.framework */; };
 		BECDC6A15DB1F8A682127D77 /* Pods_Spreat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED2891C93C501248B150AD3 /* Pods_Spreat.framework */; };
@@ -111,7 +111,7 @@
 		44BFB8662530E0D10002899F /* RecentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsView.swift; sourceTree = "<group>"; };
 		44BFB8682530E3090002899F /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
 		44BFB86A2530E5EC0002899F /* CountryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRowView.swift; sourceTree = "<group>"; };
-		44BFB86D2530E8010002899F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		44BFB86D2530E8010002899F /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 		4B96FF4DB7753044B8CA2AFB /* Pods-SpreatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpreatTests.release.xcconfig"; path = "Target Support Files/Pods-SpreatTests/Pods-SpreatTests.release.xcconfig"; sourceTree = "<group>"; };
 		6D2E3DD1AC42FDA893C24347 /* Pods-Spreat-SpreatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spreat-SpreatUITests.debug.xcconfig"; path = "Target Support Files/Pods-Spreat-SpreatUITests/Pods-Spreat-SpreatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		896951DFBE7A52F9681180EC /* Pods-Spreat-SpreatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spreat-SpreatUITests.release.xcconfig"; path = "Target Support Files/Pods-Spreat-SpreatUITests/Pods-Spreat-SpreatUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -330,7 +330,7 @@
 		44BFB86C2530E7EC0002899F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				44BFB86D2530E8010002899F /* Extension.swift */,
+				44BFB86D2530E8010002899F /* Int+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -592,7 +592,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44BFB86E2530E8010002899F /* Extension.swift in Sources */,
+				44BFB86E2530E8010002899F /* Int+Extensions.swift in Sources */,
 				44BFB8692530E3090002899F /* ListHeaderView.swift in Sources */,
 				44AD35272531DD2100CB833E /* COVIDCountryFetchRequest.swift in Sources */,
 				4401BA7F253641A400008CC5 /* OptionsView.swift in Sources */,
