@@ -35,8 +35,8 @@ class COVIDCountryFetchRequest: ObservableObject {
                 let formatter = ISO8601DateFormatter()
                 let date = formatter.date(from: lastUpdated)
                 let dateFormatter = DateFormatter()
-                dateFormatter.dateStyle = .short
-                dateFormatter.timeStyle = .short
+                dateFormatter.dateStyle = .medium
+                dateFormatter.timeStyle = .medium
                 dateFormatter.string(from: date ?? Date())
                 
                 let response = json["response"][0]
