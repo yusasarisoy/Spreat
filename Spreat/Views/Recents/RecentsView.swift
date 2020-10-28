@@ -189,6 +189,8 @@ struct RecentsView: View {
             }
             )
         }
+        .accentColor(Color.red)
+        
         // If there is not satisfied internet connection, show an alert.
         .alert(isPresented: $internetConnectionLost) {
             Alert(
