@@ -9,7 +9,7 @@
 import Foundation
 import Localize_Swift
 
-struct OptionsManager {
+class OptionsManager {
     
     func handleLanguage(language: String) {
         switch language {

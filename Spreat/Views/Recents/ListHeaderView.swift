@@ -16,7 +16,7 @@ struct ListHeaderView: View {
             ForEach(headers, id: \.self) { header in
                 Text(header)
                     .fontWeight(.none)
-                    .font(.subheadline)
+                    .font(.footnote)
                     .padding(.all, 10)
                     .frame(maxWidth: .infinity)
             }

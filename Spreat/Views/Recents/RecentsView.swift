@@ -13,6 +13,15 @@ import Network
 
 struct RecentsView: View {
     
+    // Go to "Map".
+    @State var goToMap = false
+    
+    // Go to "News".
+    @State var goToNews = false
+    
+    // Go to "Options".
+    @State var goToOptions = false
+    
     // Start monitorize the internet connection.
     private let monitor = NWPathMonitor()
     private let queue = DispatchQueue(label: "Monitor")
@@ -42,10 +51,8 @@ struct RecentsView: View {
     var body: some View {
         // NavigationView will cover the RecentsView.
         NavigationView {
-            
             // Vertical stack will cover the entire components in the RecentsView.
             VStack {
-                
                 // Check if the SearchBar is visible.
                 if isSearchVisible {
                     SearchView(searchText: $searchText)
@@ -56,11 +63,11 @@ struct RecentsView: View {
                     .font(.subheadline)
                     .foregroundColor(Color.gray)
                     .padding(.top, 10)
+                    .accessibility(label: Text("\("last_updated".localized()): \(covidCountryFetchRequest.countryStatisticsData?.lastUpdated ?? "unknown".localized())"))
                 
                 if isGraphicActive {
                     BarChartView(data: ChartData(values: [("\("confirmed".localized())", covidFetchRequest.worldData.confirmed), ("\("critical".localized())", covidFetchRequest.worldData.critical), ("\("deaths".localized())", covidFetchRequest.worldData.deaths), ("\("recovered".localized())", covidFetchRequest.worldData.recovered)]), title: "\("global".localized())", legend: "\("recent".localized())")
                         .padding(10)
-                    
                 } else {
                     // Get the world data.
                     WorldDataView(worldData: covidFetchRequest.worldData)
@@ -81,6 +88,30 @@ struct RecentsView: View {
                     }
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                
+                // Go to "Map".
+                NavigationLink(
+                    destination: MapContainerView(),
+                    isActive: $goToMap
+                ) {
+                    EmptyView()
+                }.isDetailLink(false)
+                
+                // Go to "News".
+                NavigationLink(
+                    destination: NewsView(),
+                    isActive: $goToNews
+                ) {
+                    EmptyView()
+                }.isDetailLink(false)
+                
+                // Go to "Options".
+                NavigationLink(
+                    destination: OptionsView(),
+                    isActive: $goToOptions
+                ) {
+                    EmptyView()
+                }.isDetailLink(false)
             }
             .onAppear() {
                 // Disable highlighting the cell when it clicked.
@@ -96,19 +127,34 @@ struct RecentsView: View {
                     }
                 }
             }
-                
-                // The title of the NavigationView.
-                .navigationBarTitle("Spreat - \(("recent").localized())", displayMode: .inline)
-                
-                // The search icon of the NavigationView at the top right.
-                .navigationBarItems(leading: Button(action: {
+            
+            // The title of the NavigationView.
+            .navigationBarTitle("Spreat - \(("recent").localized())", displayMode: .inline)
+            .accessibility(label: Text("Spreat - \(("recent").localized())"))
+            
+            // The search icon of the NavigationView at the top right.
+            .navigationBarItems(leading: HStack {
+                Button(action: {
                     // Toggle the SearchBar.
                     self.isGraphicActive.toggle()
                 }, label: {
                     Image(systemName: isGraphicActive ? "info.circle.fill" : "chart.bar.fill")
                         .resizable()
                         .frame(width: 20, height: 20)
-                }), trailing: Button(action: {
+                })
+                
+                Divider()
+                
+                // Go to "Map".
+                Button(action: {
+                    self.goToMap.toggle()
+                }, label: {
+                    Image(systemName: "map")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                })
+            }, trailing: HStack {
+                Button(action: {
                     // Toggle the SearchBar.
                     self.isSearchVisible.toggle()
                     
@@ -121,18 +167,30 @@ struct RecentsView: View {
                         .resizable()
                         .frame(width: 20, height: 20)
                 })
+                
+                Divider()
+                
+                // Change the "Options".
+                Button(action: {
+                    self.goToOptions.toggle()
+                }, label: {
+                    Image(systemName: "globe")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                })
+            }
             )
         }
-            // If there is not satisfied internet connection, show an alert.
-            .alert(isPresented: $internetConnectionLost) {
-                Alert(
-                    title: Text("offline".localized()),
-                    message: Text("no_internet".localized()),
-                    dismissButton: .default(Text("ok".localized()), action: {
-                        // Leave the application.
-                        exit(0);
-                    })
-                )
+        // If there is not satisfied internet connection, show an alert.
+        .alert(isPresented: $internetConnectionLost) {
+            Alert(
+                title: Text("offline".localized()),
+                message: Text("no_internet".localized()),
+                dismissButton: .default(Text("ok".localized()), action: {
+                    // Leave the application.
+                    exit(0);
+                })
+            )
         }
     }
 }

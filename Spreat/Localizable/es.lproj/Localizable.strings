@@ -33,3 +33,4 @@
 "offline" = "Desconectado";
 "no_internet" = "Parece que no hay conexión a Internet. ¿Puedes comprobarlo?";
 "ok" = "Okay";
+"change_language" = "Cambia el idioma";
