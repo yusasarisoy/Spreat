@@ -18,7 +18,7 @@
 
 # Screenshots
 
-<a href="https://ibb.co/D7t9Wsy"><img src="https://i.ibb.co/8DLT4rB/image.png" alt="Two screenshots of the main page of the Spreat" border="0" width="250" height="541"></a>
+<a href="https://ibb.co/D7t9Wsy"><img src="https://ibb.co/MDxW5ch" alt="Two screenshots of the main page of the Spreat" border="0" width="250" height="541"></a>
 <a href="https://ibb.co/7jzf7kL"><img src="https://i.ibb.co/MPcPzn8/Simulator-Screen-Shot-i-Phone-11-2020-10-28-at-20-57-53.png" alt="Detailed COVID-19 statistics for USA" border="0" width="250" height="541"></a>
 <a href="https://ibb.co/vXNsLk4"><img src="https://i.ibb.co/HtYCfk0/Simulator-Screen-Shot-i-Phone-11-2020-10-28-at-21-00-53.png" alt="The map view for Western Europe" border="0" width="250" height="541"></a>
 
