@@ -27,7 +27,7 @@ struct CountryDetailsView: View {
                 CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.newConfirmed ?? "unknown".localized(), name: "new_cases".localized(), color: .orange)
                 CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.recovered.formatNumber() ?? "unknown".localized(), name: "recovered".localized(), color: .green)
                 CountryDetailsRow(number: String(format: "%.2f", countryFetchRequest.countryStatisticsData?.recoveryRate ?? 0.0) + "%", name: "recovery_rate".localized(), color: .green)
-                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.critical.formatNumber() ?? "unknown".localized(), name: "critical".localized(), color: .yellow)
+                CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.critical.formatNumber() ?? "unknown".localized(), name: "critical".localized(), color: Color("AccentColor"))
                 CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.deaths.formatNumber() ?? "unknown".localized(), name: "deaths".localized(), color: .red)
                 CountryDetailsRow(number: countryFetchRequest.countryStatisticsData?.newDeaths ?? "unknown".localized(), name: "new_deaths".localized(), color: .red)
                 CountryDetailsRow(number: String(format: "%.2f", countryFetchRequest.countryStatisticsData?.fatalityRate ?? 0.0) + "%", name: "fatality_rate".localized(), color: .red)

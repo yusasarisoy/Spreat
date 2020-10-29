@@ -189,7 +189,7 @@ struct RecentsView: View {
             }
             )
         }
-        .accentColor(Color.red)
+        .accentColor(Color("AccentColor"))
         
         // If there is not satisfied internet connection, show an alert.
         .alert(isPresented: $internetConnectionLost) {
