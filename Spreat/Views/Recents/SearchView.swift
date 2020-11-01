@@ -16,6 +16,7 @@ struct SearchView: View {
         HStack {
             TextField("search".localized(), text: $searchText)
                 .padding()
+                .accessibility(hint: Text("search".localized()))
         }
         .frame(height: 50)
         .background(Color("CardBackground"))

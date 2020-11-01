@@ -20,6 +20,7 @@ struct CountryDetailsRow: View {
                 Text(self.name)
                     .font(.body)
                     .padding(.all, 15)
+                    .accessibility(label: Text(self.name))
                 
                 Spacer()
                 
@@ -27,6 +28,7 @@ struct CountryDetailsRow: View {
                     .font(.body)
                     .padding(.all, 5)
                     .foregroundColor(color)
+                    .accessibility(label: Text(self.number))
             }
         }
         .padding(.leading)

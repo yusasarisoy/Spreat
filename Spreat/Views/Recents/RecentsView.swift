@@ -127,7 +127,6 @@ struct RecentsView: View {
             
             // The title of the NavigationView.
             .navigationBarTitle("Spreat - \(("recent").localized())", displayMode: .inline)
-            .accessibility(label: Text("Spreat - \(("recent").localized())"))
             
             // The search icon of the NavigationView at the top right.
             .navigationBarItems(leading: HStack {
@@ -138,6 +137,7 @@ struct RecentsView: View {
                     Image(systemName: isGraphicActive ? "info.circle.fill" : "chart.bar.fill")
                         .resizable()
                         .frame(width: 20, height: 20)
+                        .accessibility(value: Text(isGraphicActive ? "chart_bar".localized() : "recent".localized()))
                 })
                 
                 Divider()
@@ -149,6 +149,7 @@ struct RecentsView: View {
                     Image(systemName: "map")
                         .resizable()
                         .frame(width: 20, height: 20)
+                        .accessibility(value: Text("map".localized()))
                 })
             }, trailing: HStack {
                 Button(action: {
@@ -163,6 +164,7 @@ struct RecentsView: View {
                     Image(systemName: "magnifyingglass")
                         .resizable()
                         .frame(width: 20, height: 20)
+                        .accessibility(value: Text("search".localized()))
                 })
                 
                 Divider()
@@ -174,6 +176,7 @@ struct RecentsView: View {
                     Image(systemName: "paperplane.fill")
                         .resizable()
                         .frame(width: 20, height: 20)
+                        .accessibility(value: Text("news".localized()))
                 })
                 
                 Divider()
@@ -185,6 +188,7 @@ struct RecentsView: View {
                     Image(systemName: "globe")
                         .resizable()
                         .frame(width: 20, height: 20)
+                        .accessibility(value: Text("options".localized()))
                 })
             }
             )

@@ -27,7 +27,7 @@ class COVIDNewsFetchRequest: ObservableObject {
     
     // Get the total numbers about COVID-19.
     func getNewsForTheCountry() {
-        AF.request("https://covid-19-news.p.rapidapi.com/v1/covid?lang=\(Localize.currentLanguage())&media=True&q=covid))", headers: headers).responseJSON { response in
+        AF.request("https://covid-19-news.p.rapidapi.com/v1/covid?lang=en&media=True&q=covid))", headers: headers).responseJSON { response in
             let result = response.data
             
             var allNews: [COVIDNews] = []

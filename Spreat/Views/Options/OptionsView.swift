@@ -27,9 +27,12 @@ struct OptionsView: View {
             Form {
                 Section {
                     Text("change_language".localized())
+                        .accessibility(label: Text("change_language".localized()))
+                    
                     Picker("", selection: $selectedLanguageIndex) {
                         ForEach(0..<languages.count) {
                             Text(self.languages[$0])
+                                .accessibility(label: Text(self.languages[$0]))
                         }
                     }
                     .pickerStyle(WheelPickerStyle())
@@ -41,6 +44,7 @@ struct OptionsView: View {
                             self.showRecents.toggle()
                         }) {
                             Text("ok".localized())
+                                .accessibility(label: Text("ok".localized()))
                         }
                         .fullScreenCover(isPresented: $showRecents) {
                             RecentsView()

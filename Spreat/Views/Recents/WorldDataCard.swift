@@ -17,13 +17,16 @@ struct WorldDataCard: View {
     var body: some View {
         GeometryReader { geometry in
             VStack {
+                Text(self.name)
+                    .font(.footnote)
+                    .foregroundColor(self.color)
+                    .accessibility(label: Text(self.name))
+                
                 Text(self.number)
                     .font(.footnote)
                     .padding(.vertical, 5)
                     .foregroundColor(self.color)
-                Text(self.name)
-                    .font(.footnote)
-                    .foregroundColor(self.color)
+                    .accessibility(label: Text(self.number))
             }
             .frame(width: geometry.size.width, height: 65, alignment: .center)
             .background(Color("CardBackground"))
