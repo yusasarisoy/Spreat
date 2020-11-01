@@ -30,11 +30,15 @@
 
 </br>
 
-``$ pod init #This will create the Podfile.``
+The following command will create the Podfile.
+
+``$ pod init``
 
 </br>
 
-``$ pod install #This will install the required libraries in the project.``
+The following command will install the required libraries in the project.
+
+``$ pod install``
 
 </br>
 
