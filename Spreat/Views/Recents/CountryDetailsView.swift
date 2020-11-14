@@ -41,7 +41,6 @@ struct CountryDetailsView: View {
                 self.getStatistics()
             }
         }
-        .padding()
     }
     
     private func getStatistics() {

@@ -17,11 +17,12 @@ struct ListHeaderView: View {
                 Text(header)
                     .fontWeight(.none)
                     .font(.footnote)
-                    .padding(.all, 10)
                     .frame(maxWidth: .infinity)
                     .accessibility(label: Text(header))
+                    .padding(.all, 5)
             }
         }
+        .padding(.horizontal, 10)
         .background(Color("CardBackground"))
     }
 }

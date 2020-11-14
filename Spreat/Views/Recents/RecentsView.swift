@@ -84,7 +84,7 @@ struct RecentsView: View {
                         }
                     }
                 }
-                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                .listStyle(PlainListStyle())
                 
                 // Go to "Map".
                 NavigationLink(
