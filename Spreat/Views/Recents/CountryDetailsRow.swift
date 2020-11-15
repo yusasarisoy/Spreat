@@ -31,6 +31,7 @@ struct CountryDetailsRow: View {
                     .accessibility(label: Text(self.number))
             }
         }
+        .padding(.horizontal)
     }
 }
 
