@@ -18,9 +18,10 @@
 
 # Screenshots
 
-<a href="https://ibb.co/D7t9Wsy"><img src="https://i.ibb.co/pjb0F2m/Simulator-Screen-Shot-i-Phone-11-2020-10-29-at-00-14-28.png" alt="A screenshot of the main page of the Spreat" border="0" width="250" height="541"></a>
-<a href="https://ibb.co/7jzf7kL"><img src="https://i.ibb.co/MPcPzn8/Simulator-Screen-Shot-i-Phone-11-2020-10-28-at-20-57-53.png" alt="Detailed COVID-19 statistics for USA" border="0" width="250" height="541"></a>
-<a href="https://ibb.co/vXNsLk4"><img src="https://i.ibb.co/HtYCfk0/Simulator-Screen-Shot-i-Phone-11-2020-10-28-at-21-00-53.png" alt="The map view for Western Europe" border="0" width="250" height="541"></a>
+<a href="https://ibb.co/nRymGJY"><img src="https://i.ibb.co/4JLtqrX/Simulator-Screen-Shot-i-Phone-12-mini-2020-11-15-at-16-55-12.png" alt="One of the onboarding tabs of the Spreat" border="0" width="250" height="541"></a>
+<a href="https://ibb.co/1MLfWKb"><img src="https://i.ibb.co/Lr8z76v/Simulator-Screen-Shot-i-Phone-12-mini-2020-11-15-at-16-52-46.png" alt="A screenshot of the main page of the Spreat" border="0" width="250" height="541"></a>
+<a href="https://ibb.co/KFqRkYS"><img src="https://i.ibb.co/BqZdxmF/Simulator-Screen-Shot-i-Phone-12-mini-2020-11-15-at-16-53-56.png" alt="Detailed COVID-19 statistics for USA" border="0" width="250" height="541"></a>
+<a href="https://ibb.co/wYx7GK7"><img src="https://i.ibb.co/M93fwRf/Simulator-Screen-Shot-i-Phone-12-mini-2020-11-15-at-16-54-34.png" alt="The map view for U.S.A." border="0" width="250" height="541"></a>
 
 </br>
 
