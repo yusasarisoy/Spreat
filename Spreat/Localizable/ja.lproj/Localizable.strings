@@ -35,3 +35,10 @@
 "ok" = "オーケー";
 "change_language" = "言語を変更する";
 "chart_bar" = "チャートバー";
+"statisticsTitle" = "統計学";
+"statisticsDescription" = "統計を表示し、世界と国全体に関する情報を取得します。";
+"worldMapTitle" = "世界地図";
+"worldMapDescription" = "地図を開いて世界中を旅し、COVID-19の影響を受けた国を確認してください。";
+"newsTitle" = "ニュース";
+"newsDescription" = "ニュースを読んで、COVID-19に関する最新のアップデートを入手してください。";
+"start" = "開始";

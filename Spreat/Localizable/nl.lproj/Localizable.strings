@@ -35,3 +35,10 @@
 "ok" = "OK";
 "change_language" = "Verander de taal";
 "chart_bar" = "Grafiekbalk";
+"statisticsTitle" = "Statistieken";
+"statisticsDescription" = "Bekijk de statistieken en verkrijg informatie over de wereld en de hele landen.";
+"worldMapTitle" = "Wereldkaart";
+"worldMapDescription" = "Open de kaart en reis de wereld rond om te zien hoe elk land is beïnvloed door COVID-19.";
+"newsTitle" = "Nieuws";
+"newsDescription" = "Lees het nieuws voor de laatste updates over COVID-19.";
+"start" = "Begin";

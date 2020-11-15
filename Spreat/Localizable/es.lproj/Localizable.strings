@@ -35,3 +35,10 @@
 "ok" = "Okay";
 "change_language" = "Cambia el idioma";
 "chart_bar" = "Barra de gráfico";
+"statisticsTitle" = "Estadísticas";
+"statisticsDescription" = "Vea las estadísticas y obtenga información sobre el mundo y todos los países.";
+"worldMapTitle" = "Mapa del mundo";
+"worldMapDescription" = "Abra el mapa y viaje por el mundo y vea cómo cualquier país se ha visto afectado por COVID-19.";
+"newsTitle" = "Noticias";
+"newsDescription" = "Lea las noticias para obtener las últimas actualizaciones sobre COVID-19.";
+"start" = "Comienzo";

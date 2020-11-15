@@ -35,3 +35,10 @@
 "ok" = "حسنا";
 "change_language" = "تغيير اللغة";
 "chart_bar" = "شريط الرسم البياني";
+"statisticsTitle" = "الإحصاء";
+"statisticsDescription" = "عرض الإحصائيات والحصول على معلومات حول العالم والدول بأكملها.";
+"worldMapTitle" = "خريطة العالم";
+"worldMapDescription" = "افتح الخريطة وسافر حول العالم وشاهد كيف تأثرت أي دولة بـ COVID-19.";
+"newsTitle" = "أخبار";
+"newsDescription" = "اقرأ الأخبار للحصول على آخر التحديثات حول COVID-19.";
+"start" = "بداية";

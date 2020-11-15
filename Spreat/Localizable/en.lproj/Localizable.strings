@@ -35,3 +35,10 @@
 "ok" = "OK";
 "change_language" = "Change the language";
 "chart_bar" = "Chart bar";
+"statisticsTitle" = "Statistics";
+"statisticsDescription" = "View the statistics and gain information about the world and the whole countries.";
+"worldMapTitle" = "World Map";
+"worldMapDescription" = "Open the map and travel the world and see how any country has been affected by COVID-19.";
+"newsTitle" = "News";
+"newsDescription" = "Read the news to get any latest updates about COVID-19.";
+"start" = "Start";

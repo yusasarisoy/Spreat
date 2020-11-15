@@ -35,3 +35,10 @@
 "ok" = "Tamam";
 "change_language" = "Dili değiştir";
 "chart_bar" = "Sütun frafiği";
+"statisticsTitle" = "İstatistikler";
+"statisticsDescription" = "İstatistikleri görüntüleyin, dünya ve tüm ülkeler hakkında bilgi edinin.";
+"worldMapTitle" = "Dünya Haritası";
+"worldMapDescription" = "Haritayı açıp dünyayı dolaşın ve herhangi bir ülkenin COVID-19'dan ne kadar etkilendiğini görün.";
+"newsTitle" = "Haberler";
+"newsDescription" = "COVID-19 ile ilgili en son güncellemeleri almak için haberleri okuyun.";
+"start" = "Başla";
