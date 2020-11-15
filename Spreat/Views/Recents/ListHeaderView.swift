@@ -16,13 +16,15 @@ struct ListHeaderView: View {
             ForEach(headers, id: \.self) { header in
                 Text(header)
                     .fontWeight(.none)
-                    .font(.footnote)
+                    .font(.caption)
                     .frame(maxWidth: .infinity)
                     .accessibility(label: Text(header))
-                    .padding(.all, 5)
+                    .padding(.vertical, 5)
+                    .padding(.horizontal, 10)
+                    .foregroundColor(Color("AccentColor"))
             }
         }
-        .padding(.horizontal, 10)
+        .padding(.horizontal, 15)
         .background(Color("CardBackground"))
     }
 }
