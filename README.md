@@ -18,9 +18,10 @@
 
 # Screenshots
 
-<a href="https://ibb.co/D7t9Wsy"><img src="https://i.ibb.co/pjb0F2m/Simulator-Screen-Shot-i-Phone-11-2020-10-29-at-00-14-28.png" alt="A screenshot of the main page of the Spreat" border="0" width="250" height="541"></a>
-<a href="https://ibb.co/7jzf7kL"><img src="https://i.ibb.co/MPcPzn8/Simulator-Screen-Shot-i-Phone-11-2020-10-28-at-20-57-53.png" alt="Detailed COVID-19 statistics for USA" border="0" width="250" height="541"></a>
-<a href="https://ibb.co/vXNsLk4"><img src="https://i.ibb.co/HtYCfk0/Simulator-Screen-Shot-i-Phone-11-2020-10-28-at-21-00-53.png" alt="The map view for Western Europe" border="0" width="250" height="541"></a>
+<a href="https://ibb.co/0jsDp9J"><img src="https://i.ibb.co/XZY2f5J/image-4.png" alt="One of the onboarding tabs of the Spreat" border="0" width="200" height="432"></a>
+<a href="https://ibb.co/HCSnjXn"><img src="https://i.ibb.co/LrFn3vn/image.png" alt="A screenshot of the main page of the Spreat" border="0" width="200" height="432"></a>
+<a href="https://ibb.co/tMRfGBD"><img src="https://i.ibb.co/fYJRgMH/image-2.png" alt="Detailed COVID-19 statistics for USA" border="0" width="200" height="432"></a>
+<a href="https://ibb.co/gWCsQVJ"><img src="https://i.ibb.co/qgwbh5p/image-3.png" alt="The map view for U.S.A." border="0" width="200" height="432"></a>
 
 </br>
 
