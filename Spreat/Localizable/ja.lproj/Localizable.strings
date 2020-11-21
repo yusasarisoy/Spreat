@@ -42,3 +42,5 @@
 "newsTitle" = "ニュース";
 "newsDescription" = "ニュースを読んで、COVID-19に関する最新のアップデートを入手してください。";
 "start" = "開始";
+"developer" = "開発者";
+"compatibility" = "互換性";

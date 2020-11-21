@@ -10,6 +10,8 @@
 		4401BA7F253641A400008CC5 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4401BA7E253641A400008CC5 /* OptionsView.swift */; };
 		4421B65B2549AE6100DAF830 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 4421B65A2549AE6100DAF830 /* SwiftUICharts */; };
 		4421B6692549AEA000DAF830 /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 4421B6682549AEA000DAF830 /* Localize_Swift */; };
+		4453BBE325694D33004810A3 /* OptionsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453BBE225694D33004810A3 /* OptionsRowView.swift */; };
+		4453BBE825694E12004810A3 /* OptionsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453BBE725694E12004810A3 /* OptionsLabelView.swift */; };
 		44575160253C7BB0004F2718 /* OptionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457515F253C7BB0004F2718 /* OptionsManager.swift */; };
 		44732E742534D1320098792E /* COVIDNewsFetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44732E732534D1320098792E /* COVIDNewsFetchRequest.swift */; };
 		44732E762534D82A0098792E /* NewsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44732E752534D82A0098792E /* NewsItemView.swift */; };
@@ -65,6 +67,8 @@
 		134BEDD70DD69C1740E3C1C8 /* Pods-Spreat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spreat.release.xcconfig"; path = "Target Support Files/Pods-Spreat/Pods-Spreat.release.xcconfig"; sourceTree = "<group>"; };
 		2ED2891C93C501248B150AD3 /* Pods_Spreat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spreat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4401BA7E253641A400008CC5 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+		4453BBE225694D33004810A3 /* OptionsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsRowView.swift; sourceTree = "<group>"; };
+		4453BBE725694E12004810A3 /* OptionsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsLabelView.swift; sourceTree = "<group>"; };
 		4457515F253C7BB0004F2718 /* OptionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsManager.swift; sourceTree = "<group>"; };
 		44732E732534D1320098792E /* COVIDNewsFetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVIDNewsFetchRequest.swift; sourceTree = "<group>"; };
 		44732E752534D82A0098792E /* NewsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemView.swift; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				4401BA7E253641A400008CC5 /* OptionsView.swift */,
+				4453BBE225694D33004810A3 /* OptionsRowView.swift */,
+				4453BBE725694E12004810A3 /* OptionsLabelView.swift */,
 			);
 			path = Options;
 			sourceTree = "<group>";
@@ -615,6 +621,7 @@
 				4401BA7F253641A400008CC5 /* OptionsView.swift in Sources */,
 				44BFB8622530CE100002899F /* COVIDModel.swift in Sources */,
 				44BF894F2560492300E96155 /* OnboardingCardView.swift in Sources */,
+				4453BBE825694E12004810A3 /* OptionsLabelView.swift in Sources */,
 				44BFB8672530E0D10002899F /* RecentsView.swift in Sources */,
 				44AD351D2531C30800CB833E /* SearchView.swift in Sources */,
 				44AD351F2531C85800CB833E /* CountryDetailsRow.swift in Sources */,
@@ -629,6 +636,7 @@
 				44BFB8602530C93F0002899F /* COVIDFetchRequest.swift in Sources */,
 				44BF89542560496700E96155 /* OnboardingCardModel.swift in Sources */,
 				44BFB86B2530E5EC0002899F /* CountryRowView.swift in Sources */,
+				4453BBE325694D33004810A3 /* OptionsRowView.swift in Sources */,
 				44575160253C7BB0004F2718 /* OptionsManager.swift in Sources */,
 				44AD35252531D8C600CB833E /* MapContainerView.swift in Sources */,
 				44AD351B2531BB0A00CB833E /* WorldDataView.swift in Sources */,

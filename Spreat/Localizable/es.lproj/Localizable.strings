@@ -42,3 +42,5 @@
 "newsTitle" = "Noticias";
 "newsDescription" = "Lea las noticias para obtener las últimas actualizaciones sobre COVID-19.";
 "start" = "Comienzo";
+"developer" = "Desarrollador";
+"compatibility" = "Compatibilidad";

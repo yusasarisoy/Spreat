@@ -11,6 +11,7 @@ import SwiftUICharts
 import Localize_Swift
 import Network
 
+@available(iOS 14.0, *)
 struct RecentsView: View {
     
     // Go to "Map".
@@ -211,6 +212,10 @@ struct RecentsView: View {
 
 struct RecentsView_Previews: PreviewProvider {
     static var previews: some View {
-        RecentsView()
+        if #available(iOS 14.0, *) {
+            RecentsView()
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }
