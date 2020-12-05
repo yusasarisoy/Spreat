@@ -10,6 +10,13 @@
 		4401BA7F253641A400008CC5 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4401BA7E253641A400008CC5 /* OptionsView.swift */; };
 		4421B65B2549AE6100DAF830 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 4421B65A2549AE6100DAF830 /* SwiftUICharts */; };
 		4421B6692549AEA000DAF830 /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 4421B6682549AEA000DAF830 /* Localize_Swift */; };
+		4445D28F2573CBCA00D9E45B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4445D28E2573CBCA00D9E45B /* WidgetKit.framework */; };
+		4445D2912573CBCA00D9E45B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4445D2902573CBCA00D9E45B /* SwiftUI.framework */; };
+		4445D2942573CBCA00D9E45B /* Spreat_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4445D2932573CBCA00D9E45B /* Spreat_Widget.swift */; };
+		4445D2972573CBCB00D9E45B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4445D2962573CBCB00D9E45B /* Assets.xcassets */; };
+		4445D2992573CBCB00D9E45B /* Spreat_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4445D2952573CBCB00D9E45B /* Spreat_Widget.intentdefinition */; };
+		4445D29A2573CBCB00D9E45B /* Spreat_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4445D2952573CBCB00D9E45B /* Spreat_Widget.intentdefinition */; };
+		4445D29D2573CBCB00D9E45B /* Spreat WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4445D28D2573CBCA00D9E45B /* Spreat WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4453BBE325694D33004810A3 /* OptionsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453BBE225694D33004810A3 /* OptionsRowView.swift */; };
 		4453BBE825694E12004810A3 /* OptionsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453BBE725694E12004810A3 /* OptionsLabelView.swift */; };
 		44575160253C7BB0004F2718 /* OptionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457515F253C7BB0004F2718 /* OptionsManager.swift */; };
@@ -47,6 +54,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4445D29B2573CBCB00D9E45B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44BFB8242530C48F0002899F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4445D28C2573CBCA00D9E45B;
+			remoteInfo = "Spreat WidgetExtension";
+		};
 		44BFB8432530C4900002899F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 44BFB8242530C48F0002899F /* Project object */;
@@ -63,10 +77,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4445D29E2573CBCB00D9E45B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4445D29D2573CBCB00D9E45B /* Spreat WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		134BEDD70DD69C1740E3C1C8 /* Pods-Spreat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spreat.release.xcconfig"; path = "Target Support Files/Pods-Spreat/Pods-Spreat.release.xcconfig"; sourceTree = "<group>"; };
 		2ED2891C93C501248B150AD3 /* Pods_Spreat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spreat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4401BA7E253641A400008CC5 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+		4445D28D2573CBCA00D9E45B /* Spreat WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Spreat WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4445D28E2573CBCA00D9E45B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4445D2902573CBCA00D9E45B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4445D2932573CBCA00D9E45B /* Spreat_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spreat_Widget.swift; sourceTree = "<group>"; };
+		4445D2952573CBCB00D9E45B /* Spreat_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Spreat_Widget.intentdefinition; sourceTree = "<group>"; };
+		4445D2962573CBCB00D9E45B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4445D2982573CBCB00D9E45B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4453BBE225694D33004810A3 /* OptionsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsRowView.swift; sourceTree = "<group>"; };
 		4453BBE725694E12004810A3 /* OptionsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsLabelView.swift; sourceTree = "<group>"; };
 		4457515F253C7BB0004F2718 /* OptionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsManager.swift; sourceTree = "<group>"; };
@@ -132,6 +167,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4445D28A2573CBCA00D9E45B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4445D2912573CBCA00D9E45B /* SwiftUI.framework in Frameworks */,
+				4445D28F2573CBCA00D9E45B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		44BFB8292530C48F0002899F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,6 +224,8 @@
 				2ED2891C93C501248B150AD3 /* Pods_Spreat.framework */,
 				E03E95AF45CC6E616DB90FC0 /* Pods_Spreat_SpreatUITests.framework */,
 				940D7FBEF67FA24A7B0BC3C6 /* Pods_SpreatTests.framework */,
+				4445D28E2573CBCA00D9E45B /* WidgetKit.framework */,
+				4445D2902573CBCA00D9E45B /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -192,6 +238,17 @@
 				4453BBE725694E12004810A3 /* OptionsLabelView.swift */,
 			);
 			path = Options;
+			sourceTree = "<group>";
+		};
+		4445D2922573CBCA00D9E45B /* Spreat Widget */ = {
+			isa = PBXGroup;
+			children = (
+				4445D2932573CBCA00D9E45B /* Spreat_Widget.swift */,
+				4445D2952573CBCB00D9E45B /* Spreat_Widget.intentdefinition */,
+				4445D2962573CBCB00D9E45B /* Assets.xcassets */,
+				4445D2982573CBCB00D9E45B /* Info.plist */,
+			);
+			path = "Spreat Widget";
 			sourceTree = "<group>";
 		};
 		44575161253C801E004F2718 /* Managers */ = {
@@ -258,6 +315,7 @@
 				44BFB82E2530C48F0002899F /* Spreat */,
 				44BFB8452530C4900002899F /* SpreatTests */,
 				44BFB8502530C4900002899F /* SpreatUITests */,
+				4445D2922573CBCA00D9E45B /* Spreat Widget */,
 				44BFB82D2530C48F0002899F /* Products */,
 				0CCEDF5186D0596BF5F5BCDB /* Pods */,
 				43C5905E4A69558FA178C1A7 /* Frameworks */,
@@ -270,6 +328,7 @@
 				44BFB82C2530C48F0002899F /* Spreat.app */,
 				44BFB8422530C4900002899F /* SpreatTests.xctest */,
 				44BFB84D2530C4900002899F /* SpreatUITests.xctest */,
+				4445D28D2573CBCA00D9E45B /* Spreat WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -361,6 +420,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4445D28C2573CBCA00D9E45B /* Spreat WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4445D2A12573CBCB00D9E45B /* Build configuration list for PBXNativeTarget "Spreat WidgetExtension" */;
+			buildPhases = (
+				4445D2892573CBCA00D9E45B /* Sources */,
+				4445D28A2573CBCA00D9E45B /* Frameworks */,
+				4445D28B2573CBCA00D9E45B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Spreat WidgetExtension";
+			productName = "Spreat WidgetExtension";
+			productReference = 4445D28D2573CBCA00D9E45B /* Spreat WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		44BFB82B2530C48F0002899F /* Spreat */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44BFB8562530C4900002899F /* Build configuration list for PBXNativeTarget "Spreat" */;
@@ -370,10 +446,12 @@
 				44BFB8292530C48F0002899F /* Frameworks */,
 				44BFB82A2530C48F0002899F /* Resources */,
 				5FE61BB778837A09964B71E6 /* [CP] Embed Pods Frameworks */,
+				4445D29E2573CBCB00D9E45B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4445D29C2573CBCB00D9E45B /* PBXTargetDependency */,
 			);
 			name = Spreat;
 			packageProductDependencies = (
@@ -429,10 +507,13 @@
 		44BFB8242530C48F0002899F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1170;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Yuşa Sarısoy";
 				TargetAttributes = {
+					4445D28C2573CBCA00D9E45B = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					44BFB82B2530C48F0002899F = {
 						CreatedOnToolsVersion = 11.7;
 					};
@@ -475,11 +556,20 @@
 				44BFB82B2530C48F0002899F /* Spreat */,
 				44BFB8412530C4900002899F /* SpreatTests */,
 				44BFB84C2530C4900002899F /* SpreatUITests */,
+				4445D28C2573CBCA00D9E45B /* Spreat WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4445D28B2573CBCA00D9E45B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4445D2972573CBCB00D9E45B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		44BFB82A2530C48F0002899F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -611,6 +701,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4445D2892573CBCA00D9E45B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4445D2942573CBCA00D9E45B /* Spreat_Widget.swift in Sources */,
+				4445D2992573CBCB00D9E45B /* Spreat_Widget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		44BFB8282530C48F0002899F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -624,6 +723,7 @@
 				4453BBE825694E12004810A3 /* OptionsLabelView.swift in Sources */,
 				44BFB8672530E0D10002899F /* RecentsView.swift in Sources */,
 				44AD351D2531C30800CB833E /* SearchView.swift in Sources */,
+				4445D29A2573CBCB00D9E45B /* Spreat_Widget.intentdefinition in Sources */,
 				44AD351F2531C85800CB833E /* CountryDetailsRow.swift in Sources */,
 				44AD35192531B83500CB833E /* WorldDataCard.swift in Sources */,
 				44732E762534D82A0098792E /* NewsItemView.swift in Sources */,
@@ -663,6 +763,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4445D29C2573CBCB00D9E45B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4445D28C2573CBCA00D9E45B /* Spreat WidgetExtension */;
+			targetProxy = 4445D29B2573CBCB00D9E45B /* PBXContainerItemProxy */;
+		};
 		44BFB8442530C4900002899F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 44BFB82B2530C48F0002899F /* Spreat */;
@@ -713,6 +818,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4445D29F2573CBCB00D9E45B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DLL4KWB96;
+				INFOPLIST_FILE = "Spreat Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icloud.yusasarisoy.Spreat.Spreat-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4445D2A02573CBCB00D9E45B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DLL4KWB96;
+				INFOPLIST_FILE = "Spreat Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icloud.yusasarisoy.Spreat.Spreat-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		44BFB8542530C4900002899F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -835,6 +984,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F47BF41638B6E1353B8EED41 /* Pods-Spreat.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Spreat/Preview Content\"";
@@ -856,6 +1006,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 134BEDD70DD69C1740E3C1C8 /* Pods-Spreat.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Spreat/Preview Content\"";
@@ -964,6 +1115,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4445D2A12573CBCB00D9E45B /* Build configuration list for PBXNativeTarget "Spreat WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4445D29F2573CBCB00D9E45B /* Debug */,
+				4445D2A02573CBCB00D9E45B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		44BFB8272530C48F0002899F /* Build configuration list for PBXProject "Spreat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
