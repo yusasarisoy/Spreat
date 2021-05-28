@@ -6,7 +6,7 @@
 
 <div align="center">
 
-![](https://img.shields.io/badge/OS-iOS-informational?style=flat&logo=iOS&logoColor=white&color=32429C) ![](https://img.shields.io/badge/Editor-Xcode-informational?style=flat&logo=Xcode&logoColor=white&color=32429C) ![](https://img.shields.io/badge/Code-SwiftUI-informational?style=flat&logo=Swift&logoColor=white&color=32429C)
+![](https://img.shields.io/badge/Editor-Xcode-informational?style=flat&logo=Xcode&logoColor=white&color=32429C) ![](https://img.shields.io/badge/Code-SwiftUI-informational?style=flat&logo=Swift&logoColor=white&color=32429C)
 
 </div>
 
